@@ -6,14 +6,14 @@
  * https://opensource.org/licenses/MIT
  */
 
-var bananas : 0..100 = 2;
+var bananas : 0..100 = 4;
 var notePresent: Boolean;
 type Person : either {
   Happy,
   Hungry,
   GoingToStore,
   ReturningFromStore {
-    carrying: 0..8
+    carrying: 1..4
   }
 };
 var roommates: Array<Person>[1..5];
@@ -25,7 +25,7 @@ rule step for state in roommates {
     }
 
     Hungry {
-      if bananas == 0 {
+      if bananas <= 4 {
         if (notePresent) {
           // Roommate at store: try again later
         } else {
@@ -40,7 +40,7 @@ rule step for state in roommates {
 
     GoingToStore {
       state = ReturningFromStore {
-        carrying: urandomRange(0, 8)
+        carrying: urandomRange(1, 4)
       };
     }
 
