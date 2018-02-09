@@ -5,6 +5,16 @@
  * For full license text, see LICENSE.md file in the repo root or
  * https://opensource.org/licenses/MIT
  */
+ 
+ /*
+ JUST RANDOM COMMENTS
+ JUST RANDOM COMMENTS
+ JUST RANDOM COMMENTS
+ JUST RANDOM COMMENTS
+ JUST RANDOM COMMENTS
+ JUST RANDOM COMMENTS
+ JUST RANDOM COMMENTS
+ */
 
 var bananas : 0..100 = 2;
 var notePresent: Boolean;
