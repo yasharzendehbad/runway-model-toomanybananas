@@ -27,7 +27,7 @@
     },
     {
       "id": "skeleton",
-      "label": "Too Many Bananas: Test",
+      "label": "Too Many Bananas: Skeleton",
       "spec": "skeleton.model",
       "view": "toomanybananas.jsx"
     }
