@@ -32,7 +32,7 @@ rule step for state in roommates {
           // Roommate at store: try again later
           if(state==Failed)
           {
-           noteRepresent=False;
+           notePresent =False;
           }
         } else {
           notePresent = True;
