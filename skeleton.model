@@ -30,6 +30,10 @@ rule step for state in roommates {
       if bananas == 0 {
         if (notePresent) {
           // Roommate at store: try again later
+          if(state==Failed)
+          {
+           noteRepresent=False;
+          }
         } else {
           notePresent = True;
           state = GoingToStore;
